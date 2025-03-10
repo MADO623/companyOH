@@ -1,0 +1,749 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  background-color: #cbc7bc;
+  overflow: auto;
+  overflow-x: hidden;
+  width: 100vw;
+  height: auto;
+}
+.section1 {
+  background-image: url(./image/setion1.jpeg);
+  background-size: cover;
+  background-position: 50%;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-clip: content-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+/* كل مقاسات التابلت هنا */
+ 
+@media (max-width: 768px) {
+  .section1 {
+    background-image: url("./image/نسخة\ من\ setion1.jpeg");
+  }
+  #menu-icon {
+    position: relative;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 50px;
+  }
+  #menu-img {
+    position: relative;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 50px;
+    width: 110px;
+    height: 90px;
+    border-radius: 100%;
+    border: solid 4px black;
+    background: none; /* إزالة الخلفية */
+    border: none; /* إزالة الحدود */
+    box-shadow: none; /* إزالة الظلال */
+  }
+  #footer_home {
+    padding: 30px !important;
+  }
+   
+}
+@media (max-width: 991px) {
+  .section1 {
+    background-image: url("./image/نسخة\ من\ setion1.jpeg");
+  }
+}
+
+.section1 h1 {
+  font-family: "Lalezar", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: bold;
+  color: azure;
+  position: absolute;
+  right: 5%;
+}
+@media (min-width: 652) and (max-width: 696px) {
+  #footer_home h1 {
+    font-size: 1px !important;
+  }
+}
+
+header {
+  /* background-color: blueviolet; */
+  width: 100%;
+  height: 5vh;
+  position: absolute;
+  top: 0%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4rem;
+  padding: 44px 27px;
+}
+@media (max-width: 768px) {
+  header {
+    display: none; /* إخفاء الهيدر */
+  }
+}
+@media (min-width: 768px) and (max-width: 884px) {
+  header button {
+    height: 100px;
+    width: 40px;
+    font-size: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 992px) and (max-width: 1150px) {
+  .section1 h1 {
+    font-size: 30px;
+  }
+}
+/* إظهاره في الشاشات الأكبر */
+
+@media (min-width: 768px) {
+  header {
+    display: flex; /* يعرض الهيدر */
+  }
+}
+/* الشكل العادي */
+@media (max-width: 482px) {
+  #section_6_silicon{
+    font-size: 40px !important;
+  }
+}
+
+
+
+header a {
+  text-decoration: none;
+  font-size: 25px;
+  color: ghostwhite;
+  font-family: "Lalezar", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: bold;
+}
+
+button {
+  --hover-shadows: 16px 16px 33px #121212, -16px -16px 33px #303030;
+  --accent: fuchsia;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  border: none;
+  border-radius: 1.1em;
+  background-color: #212121;
+  cursor: pointer;
+  color: white;
+  padding: 1em 2em;
+  transition: box-shadow ease-in-out 0.3s, background-color ease-in-out 0.1s,
+    letter-spacing ease-in-out 0.1s, transform ease-in-out 0.1s;
+  box-shadow: 13px 13px 10px #1c1c1c, -13px -13px 10px #262626;
+  position: relative;
+  position: absolute;
+  right: 3%;
+  top: 10%;
+  width: 200px;
+  height: 90px;
+  font-size: 25px;
+  color: ghostwhite;
+  font-family: "Lalezar", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: bold;
+}
+
+button:hover {
+  box-shadow: var(--hover-shadows);
+  background-color: green;
+}
+
+button:active {
+  box-shadow: var(--hover-shadows), var(--accent) 0px 0px 30px 5px;
+  background-color: var(--accent);
+  transform: scale(0.95);
+}
+
+/* end whatsapp logo */
+.whatsapp-button {
+  position: fixed; /* يجعل الزر ثابتًا */
+  bottom: 20px; /* يحدد موقعه من أسفل */
+  right: 20px; /* يحدد موقعه من اليمين */
+  z-index: 999; /* يجعل الزر فوق كل العناصر */
+  background-color: transparent; /* يزيل الخلفية */
+  border: none; /* يزيل الإطار */
+  cursor: pointer;
+}
+
+/* حجم الصورة */
+.whatsapp-button img {
+  width: 60px; /* حجم الأيقونة */
+  height: 60px;
+}
+header a:hover {
+  color: rgb(50, 224, 111);
+}
+.section2 {
+  font-size: 4rem;
+  width: 100vw;
+  height: 30vh;
+  background-color: #a09c94;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-family: "Aref Ruqaa", serif;
+  font-weight: bold;
+  font-style: normal;
+}
+.section3 {
+  font-size: 4rem;
+  width: 100vw;
+  height: 30vh;
+  background-color: #a09c94;
+  font-family: "Aref Ruqaa", serif;
+  font-weight: bold;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.grid img {
+  transition: transform 0.3s ease;
+}
+
+.grid img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 576px) {
+  /* للشاشات الصغيرة جدًا */
+  .section1 h1 {
+    font-size: 24px; /* حجم النص على الهواتف الصغيرة */
+  }
+}
+@media (max-width: 991px) {
+  #menu-icon {
+    position: relative;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 50px;
+  }
+  #menu-img {
+    position: relative;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 50px;
+    width: 110px;
+    height: 90px;
+    border-radius: 100%;
+    border: solid 4px black;
+    background: none; /* إزالة الخلفية */
+    border: none; /* إزالة الحدود */
+    box-shadow: none; /* إزالة الظلال */
+  }
+}
+nav {
+  width: 100vw;
+  height: 100vh;
+  background-color: #cbc7bc;
+}
+nav a {
+  text-decoration: none;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  font-family: "Lalezar", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+nav a:hover {
+  color: rgb(56, 104, 56);
+}
+.product-img {
+  object-fit: contain; /* يجعل الصورة تتناسب مع الإطار وتظهر بالكامل */
+  object-position: center; /* يضمن تمركز الصورة داخل الإطار */
+}
+.section5 {
+  font-size: 4rem;
+  width: 100vw;
+  height: 30vh;
+  background-color: #a09c94;
+  font-family: "Aref Ruqaa", serif;
+  font-weight: bold;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.section6 {
+  font-size: 4rem;
+  width: 100vw;
+  height: 30vh;
+  background-color: #a09c94;
+  font-family: "Aref Ruqaa", serif;
+  font-weight: bold;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .video video {
+    width: 100%; /* العرض 100% */
+    height: 100px; /* الطول يتناسب مع العرض */
+
+    object-fit: cover;
+  }
+  .video {
+    margin-left: 0%;
+  }
+}
+.style-hr {
+  border: 0;
+  height: 6px; /* سمك الخط */
+  background-color: #000000; /* لون الخط */
+  box-shadow: 4px 6px rgba(0, 0, 0, 0.1); /* إضافة ظل */
+}
+.section7 {
+  position: relative;
+  padding: 20px;
+  background-color: #303436;
+  background-attachment: fixed;
+}
+
+.section7 h1 {
+  font-size: 3rem;
+  font-family: "Aref Ruqaa", serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: white;
+  background-color: #433931;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 600px; /* تعديل ارتفاع الحاوية ليصبح 400px أو أي قيمة مناسبة */
+  overflow: hidden;
+  background: #303030; /* خلفية سوداء في حال كان الفيديو أصغر من الحاوية */
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* استعلامات الوسائط للمقاسات الصغيرة */
+@media screen and (max-width: 768px) {
+  .video-container {
+    height: 250px; /* تقليل ارتفاع الحاوية في المقاسات الصغيرة */
+  }
+
+  .section7 h1 {
+    font-size: 1.5rem; /* تقليل حجم الخط في المقاسات الصغيرة */
+  }
+}
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: rgb(93, 140, 181);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+footer img {
+  width: 30px;
+  height: 30px;
+}
+footer h1 {
+  margin-bottom: 30px;
+  position: absolute;
+  right: 3%;
+  font-size: 4rem;
+  font-family: "Aref Ruqaa", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.footer1 {
+  display: flex;
+  gap: 1rem;
+  margin: 20px;
+}
+.footer2 {
+  display: flex;
+  gap: 1rem;
+  margin: 20px;
+}
+.footer3 {
+  display: flex;
+  gap: 1rem;
+  margin: 20px;
+}
+footer h5 {
+  font-size: 1.6rem;
+}
+@media (max-width: 768px) {
+  footer {
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+  }
+
+  footer h1 {
+    font-size: 2rem;
+    right: 0%;
+    position: static;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer1,
+  .footer2,
+  .footer3 {
+    flex-direction: row;
+    gap: 1rem;
+    margin: 10px;
+    justify-content: center;
+  }
+
+  footer h5 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  footer img {
+    width: 25px;
+    height: 25px;
+  }
+  
+}
+.footer-end {
+  height: 30px;
+  position: absolute;
+  bottom: 0%;
+  margin-top: 40px;
+  background-color: rgb(36, 36, 36);
+}
+@media (max-width: 768px) {
+  .footer-end {
+    height: 20px;
+  }
+}
+@media (max-width: 768px) {
+  #img12 {
+    height: 210px;
+  }
+}
+@media (max-width: 768px) {
+  #img13 {
+    margin-bottom: 40px;
+    height: 210px;
+  }
+}
+/* تخصيص شريط التمرير بأكمله */
+::-webkit-scrollbar {
+  width: 10px; /* عرض الشريط العمودي */
+  height: 10px; /* ارتفاع الشريط الأفقي */
+}
+
+/* تخصيص مسار شريط التمرير */
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* لون الخلفية */
+  border-radius: 10px; /* زاوية دائرية */
+}
+
+/* تخصيص مقبض شريط التمرير */
+::-webkit-scrollbar-thumb {
+  background: #888; /* لون المقبض */
+  border-radius: 10px; /* زاوية المقبض */
+}
+
+/* عند تمرير الماوس فوق المقبض */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* لون عند التمرير */
+}
+.who {
+  height: 600px;
+  width: 100%;
+  background-color: #000000;
+}
+.who {
+  display: flex; /* لجعل المحتوى يظهر جنبًا إلى جنب */
+  text-align: right; /* لضبط النص على اليمين */
+  color: white; /* لون النص أبيض */
+  font-family: "IBM Plex Sans Arabic", serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: #333; /* لون خلفية أنيق */
+  padding: 20px; /* المسافة حول النص */
+  border-radius: 10px; /* حواف دائرية */
+  width: 100%;
+  gap: 5rem; /* مسافة بين النص والصورة */
+}
+#h1-who-are{
+  font-size: 2rem; /* حجم الخط */
+  line-height: 1.9; /* زيادة التباعد بين الأسطر */
+  gap: 0%;
+  font-family: "IBM Plex Sans Arabic", serif;
+  font-weight: 700;
+  font-style: normal;
+ 
+}
+.who h1 {
+  font-size: 2rem; /* حجم الخط */
+  line-height: 1.6; /* زيادة التباعد بين الأسطر */
+  margin-right: 20px; /* المسافة على اليمين */
+  margin-left: 0; /* لا حاجة لمسافة على اليسار */
+  font-family: "IBM Plex Sans Arabic", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.who ul {
+  list-style-type: none; /* إزالة النقاط من القائمة */
+  padding: 0; /* إزالة الحشو داخل القائمة */
+  margin: 0; /* إزالة المسافة فوق وتحت القائمة */
+}
+
+.who li {
+  font-size: 1.7rem; /* حجم الخط للعناصر */
+  margin-bottom: 10px; /* المسافة بين العناصر */
+}
+
+.who img {
+  width: 100% ; /* جعل الصورة تتناسب مع العرض */
+  height: auto; /* الحفاظ على النسبة الأصلية للصورة */
+  border-radius: 10px; /* حواف دائرية للصورة */
+}
+@media (max-width: 768px) {
+  .who {
+    flex-direction: column; /* ترتيب العناصر عموديًا على الشاشات الصغيرة */
+    gap: 1rem; /* تقليل المسافة بين النص والصورة */
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .who h1 {
+    font-size: 1.5rem; /* تصغير حجم الخط في الهواتف */
+    margin-right: 0; /* إزالة المسافة على اليمين */
+  }
+
+  .who li {
+    font-size: 1.5rem; /* تقليل حجم الخط في الهواتف */
+  }
+
+  .who img {
+    width: 100% !important  ; /* جعل الصورة أقل عرضًا في الهواتف */
+  }
+}
+#hr1 {
+  position: absolute;
+  top: 20%; /* التحكم في المسافة بين الكلمة والـ hr */
+  left: 50%; /* تحديد الموقع أفقيًا */
+  transform: translateX(-50%); /* جعل الـ hr في المنتصف */
+  width: 30%; /* عرض الـ hr */
+  border: 3px solid azure; /* شكل الخط */
+  background-color: azure; /* لون الخط */
+}
+
+#end-footer {
+  width: 100%;
+  height: 10vh;
+  position: absolute;
+  bottom: 1%;
+  
+}
+
+@media (max-width: 755px) {
+#top_contact{
+  margin-top: 20px !important;
+
+}
+#bottom_contact{
+  margin-bottom: 20px;
+}
+}
+@media (max-width: 768px) {
+  #section2-id {
+    height: auto;
+    padding: 80px 10px; /* تقليل المسافات حول المحتوى */
+    font-size: 2rem !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .section2 span {
+    font-size: 1rem;
+  }
+
+  #hr1 {
+    display: block  ;
+    top: 10%;
+    margin-bottom: 30px;
+  }
+
+  #icons {
+    width: 100% !;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column; /* عرض العناصر بجانب بعضها */
+    gap: 2rem;
+    padding: 10px;
+    width: 100%;
+    justify-content: center; /* توسيط المحتوى */
+  }
+
+  .contact-box {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #2b5580;
+    width: 50%; /* عرض مناسب لكل div */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* توسيط المحتوى داخل div */
+    
+  }
+
+  .contact-box img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .contact-box p {
+    font-size: 1.4rem;
+  }
+
+  #end-footer {
+    width: 100%;
+    height: 10vh; /* تغيير الارتفاع ليناسب المحتوى */
+    position: relative; /* تعديل لتجنب التداخل مع باقي العناصر */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; /* توسيط المحتوى عموديًا */
+    position: absolute;
+    bottom: 0%;
+  }
+
+  #end-footer a {
+    margin: 10px;
+  }
+
+  #end-footer img {
+    width: 50px;
+    height: auto;
+  }
+
+  #end-footer span {
+    font-size: 1rem;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+  }
+
+  #end-footer .fs-4 {
+    font-size: 1.4rem;
+  }
+
+  #end-footer .text-sm {
+    font-size: 1rem;
+  }
+}
+
+.section_only {
+  font-size: 4rem;
+  width: 100vw;
+  height: 30vh;
+  background-color: #a09c94;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Aref Ruqaa", serif;
+  font-weight: bold;
+  font-style: normal;
+}
+#header-who a {
+  text-decoration: none;
+}
+#header-phone a {
+  text-decoration: none;
+}
+#pre_work a {
+  text-decoration: none;
+
+}
+#who_pre{
+  background-color: #cbc7bc;
+  height: 100vh;
+  width: 100vw;
+}
+#who_pre a{
+  text-decoration: none;
+  
+}
+#pre_phone {
+  background-color: #cbc7bc;
+  height: 100vh;
+  width: 100vw;
+}
+#pre_phone a {
+  text-decoration: none;
+}
+@media (min-width: 472px) and (max-width: 768px){
+
+  #footer_home{
+    padding: 30px !important;
+  }
+}
+@media (max-width: 358px){
+  #icon{
+    flex-wrap: wrap !important;
+  }
+} 
